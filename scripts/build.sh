@@ -33,6 +33,8 @@ function build() {
         --workdir /src/build \
         $BUILD_IMAGE \
         cmake --build .
+
+    [ -f build/xpybind.so ] || ln -s $(realpath build/*.so) build/xpybind.so
 }
 
 case "${1-}" in
