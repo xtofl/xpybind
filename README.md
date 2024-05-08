@@ -11,6 +11,7 @@ search path, `import xpybind` will expose its functions in Python.
 * BUG: only runs with python3.8 when built with the build scripts.
 * BUG: the build output is not picked up by Python (hence a symlink in the build.sh:build function)
 * FEATURE: export a slightly more complex function
+* FEATURE: export a function from third-party library (e.g. open-spiel)
 
 ## Features
 
